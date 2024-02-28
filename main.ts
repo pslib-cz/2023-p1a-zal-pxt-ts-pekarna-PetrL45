@@ -22,8 +22,9 @@ let data: Array<Odber> = [
     { cas: 800, spotreba: 1500 },
 ]
 
-for (const peceme of data){
-    console.logValue("čas: ", peceme.cas);
-    console.logValue("spotřeba: ", peceme.spotreba);
-    console.logValue("spotřebováno: ", peceme.spotreba / 3600 * peceme.cas);
+for (const kolikstalo of data){
+    console.logValue("stálo: ", 6.70 * kolikstalo.spotreba / 1000)
+}
+for (const prumernyodber of data){
+    console.logValue("průměrná spotřeba: ", (data[0].spotreba + data[1].spotreba + data[2].spotreba + data[3].spotreba + data[4].spotreba) / 5000)
 }
